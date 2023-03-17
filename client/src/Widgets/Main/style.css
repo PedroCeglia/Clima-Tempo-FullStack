@@ -1,0 +1,87 @@
+/* Clima Tempo Container - INICIO - */
+.clima-tempo-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(25, 115, 199);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+/* Clima Tempo Content - INICIO - */
+.clima-tempo-container .content{
+    width: 95%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    margin: 5px;
+    margin-top: 30px;
+
+    border-radius: 20px;
+    background-color: #a1b2d7bf;
+}
+/* Loading Forecast Container - INICIO - */
+.clima-tempo-container .content .loading-forecasts-container{
+    display: none;
+}
+.clima-tempo-container .content.loading .loading-forecasts-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    min-height: 350px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #efefef68;
+}
+.clima-tempo-container .content.loading .loading-forecasts-container img{
+    width: 70px;
+    height: 70px;
+
+    animation: rotate 1.5s linear infinite;
+}
+  
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/* Loading Forecast Container - FIM - */
+
+/* Forecast Container - INICIO - */
+.clima-tempo-container .content.has .forecasts-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+.clima-tempo-container .content .forecasts-container{display: none;}
+/* Forecast Left Container - INICIO - */
+.clima-tempo-container .content.has .forecasts-container .left{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media all and (max-width:1130px) {
+    .clima-tempo-container .content.has .forecasts-container .left{
+        width: 100%;
+    }
+}
+/* Clima Tempo Container - FIM - */
+/* Clima Tempo Content - FIM - */
+/* Forecast Container - FIM - */
+/* Forecast Left Container - FIM - */

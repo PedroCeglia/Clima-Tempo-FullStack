@@ -1,0 +1,126 @@
+/* Forecast Current Container - INICIO - */
+.forecast-current-container{
+width: 100%;
+min-width: 550px;
+max-height: 400px;
+height: 100%;
+min-height: 250px;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+padding: 20px;
+margin-bottom: 5px;
+border-radius: 10px;
+background-color: #efefef68;
+}
+/* Top Containter - INICIO - */
+.forecast-current-container .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.forecast-current-container .top img.icon-day{
+    width: 120px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.forecast-current-container .top .top-infos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.forecast-current-container .top span.nome-lugar{
+    color: rgba(0,0,0,.8);
+    font-size: 1.7em;
+    margin-right: 30px;
+}
+.forecast-current-container .top .data span.dia{
+    margin-right: 10px;
+    color: rgba(0,0,0,.8);
+    font-size: 1.4em;
+}
+.forecast-current-container .top .data span.hora{
+    color: rgba(0,0,0,.8);
+    font-size: 1.4em;
+}
+/* Top Containter - FIM - */
+/* Bottom Containter - INICIO - */
+.forecast-current-container .bottom{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+min-width: 70px;
+border: 1px solid rgba(0,0,0,.3);
+background-color: #cbe4f3aa;
+border-radius: 10px;
+}
+.forecast-current-container .bottom .info-container{
+display: flex;
+width: 100%;
+height: 100px;
+flex-direction: column;
+justify-content: flex-start;
+border-left: 1px solid rgba(0,0,0,.3);
+align-items: center;
+}
+.forecast-current-container .bottom .info-container.first{
+border-left: none;
+}
+.forecast-current-container .bottom .info-container span.header{
+border-bottom: 1px solid rgba(0,0,0,.3);
+height: 45px;
+text-align: center; 
+padding: 5px;
+margin-bottom: 5px;
+font-size: 0.8em;
+width: 100%;
+}
+.forecast-current-container .bottom .info-container span.span-value{
+font-size: 1.2em;
+height: 45px;
+color: rgba(0,0,0,.8);
+}
+/* Bottom Containter - Fim - */
+/* Forecast Current Container - FIM - */
+
+/* Media Querys*/
+@media all and (max-width:1130px) {
+    .forecast-current-container{
+        min-width: 95%;
+        width: 95%;
+        padding: 20px;
+    }  
+}
+@media all and (max-width:900px) {
+    .forecast-current-container{
+        padding: 20px;
+    }  
+}
+@media all and (max-width:600px) {
+    .forecast-current-container{
+        padding: 10px;
+    } 
+    .forecast-current-container .top span.nome-lugar{
+        font-size: 1.2em;
+    }
+    .forecast-current-container .bottom .info-container span.span-value,
+    .forecast-current-container .top .data span.dia,
+    .forecast-current-container .top .data span.hora{
+        font-size: 1em;
+    }
+}
+@media all and (max-width:450px) {
+    .forecast-current-container{
+        padding: 5px;
+    } 
+    .forecast-current-container .bottom .info-container span.header{
+        font-size: .7em;
+    }
+}

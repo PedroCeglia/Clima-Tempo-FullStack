@@ -1,0 +1,149 @@
+/* Forecast Week Container - INICIO - */
+.forecast-week-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 30%;
+    min-height: 530px;
+    max-height: 800px;
+    min-width: 450px;
+    padding: 5px;
+    margin: 0 5px;
+
+    overflow: auto;
+    
+    border-radius: 10px;
+    background-color: #efefef68;
+}
+.forecast-week-container span.header-main{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* Forecast Week List - INICIO - */
+.forecast-week-container .forecast-week-list{
+    display: flex;
+    max-height: 525px;
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* Scroll Forecast Week List - INICIO - */
+.forecast-week-container .forecast-week-list::-webkit-scrollbar{
+    width: 10px;          
+}
+.forecast-week-container .forecast-week-list::-webkit-scrollbar-track{
+    background: rgb(84, 151, 223);        /* color of the tracking area */
+    border-radius: 5px;
+}
+.forecast-week-container .forecast-week-list::-webkit-scrollbar-thumb{
+    background-color: rgba(41, 41, 154, 0.537);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    margin: 2px;
+}
+/* Scroll Forecast Week List - FIM - */
+/* Forecast Week Item - INICIO - */
+.forecast-week-container .forecast-week-list .forecast-week-item{
+    width: calc(100% - 20px);
+    height: 70px;
+    margin: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 10px;
+    background-color: #cbe4f3aa;
+}
+/* Item Info Container - INICIO - */
+.forecast-week-container .forecast-week-list .forecast-week-item .info-container{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 1px solid rgba(0,0,0,.3);
+    align-items: center;
+}
+.forecast-week-container .forecast-week-list .forecast-week-item .info-container.first{
+    border-left: none;   
+    width: 50%;
+}
+.forecast-week-container .forecast-week-list .forecast-week-item .info-container img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+.forecast-week-container .forecast-week-list .forecast-week-item .info-container span.header{
+    width: 100%;
+    padding-bottom:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+.forecast-week-container .forecast-week-list .forecast-week-item .info-container span.span-dia{
+    font-size: 1.2em;
+    color: #2d2b2b;
+}
+.forecast-week-container .forecast-week-list .forecast-week-item .info-container span.span-weather{
+    font-size: 1.4em;
+    color: #2d2b2b;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.forecast-week-container .forecast-week-list .forecast-week-item .info-container span.span-temp{
+    font-size: 1.1em;
+    color: #2d2b2b;
+}
+.forecast-week-container .forecast-week-list .forecast-week-item .info-container .weather-info{
+    display: flex;
+    min-width: 110px;
+    justify-content:center;
+    align-items: center;
+}
+/* Item Info Container - FIM - */
+/* Forecast Week Item - FIM - */
+/* Forecast Week List - FIM - */
+/* Forecast Week Container - FIM - */
+
+
+/* Media Querys*/
+@media all and (max-width:1130px) {
+    .forecast-week-container{
+        width: 95%;
+        min-width: 95%;
+        padding: 20px;
+    }  
+}
+@media all and (max-width:900px) {
+    .forecast-week-container{
+        padding: 20px;
+    }  
+}
+@media all and (max-width:600px) {
+    .forecast-week-container{
+        padding: 20px;
+    } 
+    .forecast-week-container .forecast-week-list .forecast-week-item .info-container span.header{
+        font-size: .8em;
+    }
+}
+@media all and (max-width:450px) {
+    .forecast-week-container{
+        padding: 2px;
+    } 
+    .forecast-week-container .forecast-week-list .forecast-week-item .info-container span.header{
+        font-size: .6em;
+    }
+    .forecast-week-container .forecast-week-list .forecast-week-item .info-container span.span-weather{
+        margin-left: 5px;
+    }
+
+}

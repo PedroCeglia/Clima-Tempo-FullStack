@@ -1,0 +1,82 @@
+/* Without Forecast Container - INICIO - */
+.clima-tempo-container .content .without-forecasts-container{
+    display: none;
+    width: 90%;
+    min-height: 350px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #efefef68;
+}
+.clima-tempo-container .content.hasnt .without-forecasts-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.clima-tempo-container .content.hasnt .without-forecasts-container h1{
+    font-size: 2em;
+    font-weight: 500;
+}
+.clima-tempo-container .content.hasnt .without-forecasts-container .infos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+.clima-tempo-container .content.hasnt .without-forecasts-container .infos article{
+    width: 45%;
+    margin: 10px;
+    min-width: 450px;
+    background-color: #cbe4f3aa;
+    min-height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.clima-tempo-container .content.hasnt .without-forecasts-container .infos article h3{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.clima-tempo-container .content.hasnt .without-forecasts-container .infos article p{
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+.clima-tempo-container .content.hasnt .without-forecasts-container .infos article img{
+    width: 100%;
+    margin: 10px 0;
+    max-width: 600px;
+    align-self: center;
+    object-fit: contain;
+}
+/* Without Forecast Container - FIM - */
+@media all and (max-width:1230px){
+    .clima-tempo-container .content.hasnt .without-forecasts-container h1{
+        font-size: 1.7em;
+    }
+    .clima-tempo-container .content.hasnt .without-forecasts-container .infos article img{
+        max-width:  90%;
+        min-width: 200px;
+    }
+
+    .clima-tempo-container .content.hasnt .without-forecasts-container .infos{
+        justify-content: center;
+    }
+    .clima-tempo-container .content.hasnt .without-forecasts-container .infos article{
+        width: 90%;
+    }
+
+}
+@media all and (max-width:600px){
+    .clima-tempo-container .content.hasnt .without-forecasts-container .infos article{
+        min-width: 250px;
+    }
+    .clima-tempo-container .content.hasnt .without-forecasts-container .infos article img{
+        min-height: 200px;
+    }
+}

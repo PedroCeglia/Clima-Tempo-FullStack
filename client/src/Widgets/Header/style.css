@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: #a1b2d7bf;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header .logo-header{
+    font-size: 2em;
+    width: 50%;
+    margin-left: 20px;
+    text-align: center;
+}
+
+@media all and (max-width:990px){
+    header{
+        flex-direction: column;
+    }
+    header .logo-header{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+@media all and (max-width:400px){
+    header .logo-header{
+        font-size: 1.5em;
+    }
+}
